@@ -9,13 +9,13 @@ export const HeroPage = () => {
 
   const hero = useMemo(() => getHeroById(id), [id]);
 
-  console.log(hero);
+  // console.log(hero);
 
   if (!hero) {
     return <Navigate to="/" />;
   }
 
-  const heroImageUrl = `/assets/heroes/${hero.id}.jpg`;
+  const heroImageUrl = `/heroes/${hero.id}.jpg`;
 
   const handleNavigateBack = () => {
     navigate(-1);

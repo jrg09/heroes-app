@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { HeroPage } from "../pages/HeroPage";
 
 export const HeroCard = ({ hero }) => {
-  const heroImageUrl = `/assets/heroes/${hero.id}.jpg`;
+  const heroImageUrl = `/heroes/${hero.id}.jpg`;
   const heroCharacters = hero.alter_ego !== hero.characters && hero.characters;
 
   return (
